@@ -53,7 +53,7 @@ body{
 }
 
 .profile{
-    background-image: url("/images/Profile.jpeg");
+    background-image: url("images/Profile.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 15rem;
@@ -246,7 +246,7 @@ svg:hover{
 .intro-img{
     width: 170px;
     height: 177px;
-    background-image: url(/images/round-text.png);
+    background-image: url(images/round-text.png);
     float: right;
     margin-right: 40px;
     background-repeat: no-repeat;
@@ -892,7 +892,7 @@ textarea::placeholder{
         width: 15rem;
         background-color: #66fcf1;
         position: relative;
-        margin:auto;
+        margin: auto;
         height: 3.5rem;
         border-radius: 30px;
         font-size: 1rem;
