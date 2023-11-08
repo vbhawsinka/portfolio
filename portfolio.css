@@ -53,7 +53,7 @@ body{
 }
 
 .profile{
-    background-image: url("images/Profile.jpeg");
+    background-image: url(images/Profile.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 15rem;
