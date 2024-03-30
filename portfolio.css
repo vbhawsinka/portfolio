@@ -707,6 +707,7 @@ textarea::placeholder{
     .intro-d{
         font-size: 16px;
         line-height: 1.7;
+        max-width: 99%;
     }
 
     .intro-img{
@@ -746,6 +747,7 @@ textarea::placeholder{
         line-height: 35px;
         margin-top: 30px;
         margin-bottom: 6px;
+        max-width: 96%;
     }
     
     .resume-d{
@@ -795,6 +797,7 @@ textarea::placeholder{
     .skills-ctn1{
         flex-wrap: wrap;
         margin-top: 0px;
+        left: -10px;
     }
     
     .skills-data{
@@ -816,7 +819,7 @@ textarea::placeholder{
     
     .port-ctn{
         
-        width: 90%;
+        width: 85%;
         height: auto;
         border-radius: 30px;
         display: flex;
@@ -824,7 +827,7 @@ textarea::placeholder{
 
     .port-ctn1{
         
-        width: 90%;
+        width: 85%;
         height: auto;
         border-radius: 30px;
         display: flex;
@@ -833,7 +836,7 @@ textarea::placeholder{
 
     .port-ctn2{
         
-        width: 90%;
+        width: 85%;
         height: auto;
         border-radius: 30px;
         display: flex;
