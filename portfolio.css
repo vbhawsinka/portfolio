@@ -888,7 +888,7 @@ textarea::placeholder{
     }
     
     #name,#email{
-        width: 20rem;
+        width: 21.5rem;
         outline: 0;
         color: white;
         background-color: transparent;
