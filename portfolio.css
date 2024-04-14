@@ -147,20 +147,6 @@ copyright{
     margin-bottom: 15px;
 }*/
 
-.s_nav{
-    height: 50px;
-    width: 50px;
-    bottom: 0;
-    left: 10px;
-    border: 2px solid #999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    position: fixed;
-    visibility: ;
-}
-
 .active svg{
     stroke: aqua;
 }
@@ -173,6 +159,64 @@ copyright{
     top: 20%;
     left: 30rem;
     padding: 1rem;
+}
+
+#side_nav{
+    height: 100%;
+    width: 250px;
+    bottom: 0px;
+    left: -250px;
+    background-color: #000;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    visibility: visible;
+}
+
+#side_nav.on{
+    left: 0px;
+}
+
+
+
+#side_nav.off{
+    left: -250px;
+}
+
+#side_nav ul li{
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    padding-left: 1px;
+}
+
+#side_nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#side_nav ul li a:hover{
+    color: aqua;
+}
+
+#side_nav ul li .active{
+    color: aqua;
+}
+
+.s_nav{
+    height: 80px;
+    width: 80px;
+    bottom: 15px;
+    left: 15px;
+    background-color: #000;
+    border: 2px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: fixed;
+    visibility: hidden;
 }
 
 .nav{
@@ -699,7 +743,7 @@ textarea::placeholder{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
     html{
         overflow-x: hidden;
@@ -756,6 +800,14 @@ textarea::placeholder{
         color: #000;
         margin-bottom: 0.5rem;
         width: 85%;
+    }
+
+    .s_nav{
+        visibility: visible;
+    }
+
+    #side_nav{
+        visibility: visible;
     }
 
     .nav{
@@ -998,7 +1050,7 @@ textarea::placeholder{
         width: 15rem;
         background-color: #66fcf1;
         position: relative;
-        margin:auto;
+        margin :auto;
         height: 3.5rem;
         border-radius: 30px;
         font-size: 1rem;
