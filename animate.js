@@ -1,3 +1,12 @@
+function show(){
+    document.getElementById('side_nav').classList.toggle('on');
+}
+
+function hide(){
+    document.getElementById('side_nav').classList.remove('on');
+}
+
+
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('ul li a');
 window.onscroll = () => {
