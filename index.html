@@ -14,7 +14,7 @@
   <body>
     <header>
         
-        <div class="sidebar">
+        <div class="sidebar" onclick="hide()">
             <div class="s-h">
                 <h1>Vivek</h1>
                 <p>Web Developer<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  & Designer</p>
@@ -65,7 +65,7 @@
             </ul>
             <button class="s-btn">Download CV</button>
         </div>
-        <div class="extra">
+        <div class="extra" onclick="hide()">
             <section id="introduction">
                 <h3 class="title1"><img src="images/home-2.png" alt="Introduce"/>INTRODUCE</h3>
                 <h1 class="intro-h">Say Hi from <span style="color:#66fcf1;"> Vivek</span>, Website Developer and Designer</h1>
@@ -166,7 +166,7 @@
                         </div>
                         <div class="skills-data">
                             <img src="images/wordpress.png" alt="WordPress"/>
-                            <p>WordPres</p>
+                            <p>WordPress</p>
                         </div>
                         <div class="skills-data">
                             <img src="images/wix.png" alt="Wix"/>
@@ -225,10 +225,6 @@
             </section>
 
         </div>
-
-        <div class="s_nav">
-            <image src="images/home-2.png"/>
-        </div>
         
         <ul class="nav">
             
@@ -277,6 +273,22 @@
         </ul>
 
         
+        <div class="s_nav" onclick="show()">
+            <image src="images/home-2.png"/>
+        </div>
+        <div id="side_nav">
+            <ul>
+                <li><a href="#introduction" class="active">Introduction</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    
+
     </header>
     <script src="animate.js"></script>
   </body>
