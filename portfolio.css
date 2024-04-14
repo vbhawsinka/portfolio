@@ -150,13 +150,15 @@ copyright{
 .s_nav{
     height: 50px;
     width: 50px;
-    margin-top: -45%;
-    margin-left: 93.9%;
+    bottom: 0;
+    left: 10px;
     border: 2px solid #999999;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    position: fixed;
+    visibility: ;
 }
 
 .active svg{
