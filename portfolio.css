@@ -744,7 +744,7 @@ textarea::placeholder{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
 
     html{
         overflow-x: hidden;
