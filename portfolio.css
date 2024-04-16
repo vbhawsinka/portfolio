@@ -28,6 +28,7 @@ body{
 
 .s-h{
     display: flex;
+    flex-direction: row;
 }
 
 .s-h p{
@@ -165,11 +166,11 @@ copyright{
     height: 100%;
     width: 250px;
     bottom: 0px;
-    left: -250px;
+    left: -350px;
     background-color: #000;
     position: fixed;
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
     visibility: visible;
 }
 
@@ -220,6 +221,10 @@ copyright{
 
 #side_social svg{
     fill: #fff;
+}
+
+#side_social svg:hover{
+    fill: aqua;
 }
 
 .nav{
@@ -655,7 +660,7 @@ a{
     margin-top: 10rem;
 }
 
-.contact h2{
+#contact h2{
     color: white;
     font-weight: 300;
 }
@@ -682,7 +687,7 @@ label{
     background-color: transparent;
     padding: 15px;
     border: none;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 textarea{
@@ -709,7 +714,6 @@ textarea::placeholder{
     font-size: medium;
     font-family: 'Poppins', sans-serif;
     text-align: left;
-    
     color: #999999;
 }
 
@@ -740,20 +744,15 @@ textarea::placeholder{
 
 
 
-
-
-
-
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 360px) {
 
     html{
         overflow-x: hidden;
     }
     
     body {
-        max-width: 99%;
+        max-width: 358px;
         overflow-x: hidden;
-       
     }
 
     .sidebar{
@@ -781,11 +780,357 @@ textarea::placeholder{
         height: auto;
         top: 2rem;
         left: 0;
+    }
 
+    .s-h{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
     }
 
     .s-h p{
-        margin-left: 30%;
+        justify-content: flex-end; 
+    }
+
+    .s-ul{
+        margin-top: 3.5%;
+    }
+
+    .s-li{
+        padding: 10px;
+    }
+
+    .s-btn{
+        margin-top: 3.5%;
+        color: #000;
+        margin-bottom: 0.5rem;
+        width: 85%;
+    }
+
+    .s_nav{
+        visibility: visible;
+    }
+
+    #side_nav{
+        visibility: visible;
+    }
+
+    .nav{
+        visibility: hidden;
+        left: 1rem;
+        bottom: 0px;
+        top : auto;
+        position:fixed;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .intro-h{
+        font-size: 50px;
+        line-height: 1.3;
+        max-width: 96%;
+    }
+
+    .intro-d{
+        font-size: 16px;
+        line-height: 1.7;
+        max-width: 95%;
+    }
+
+    .intro-img{
+        margin-left: 10px;
+        float: left;
+        margin-top: 3%;
+    }
+
+    .intro-m1{
+        color: #999999;
+        float: left;
+        margin-right: 22.5%;
+    }
+
+    #about{
+        margin-top: 31rem;
+    }
+
+    .about-d{
+        font-size: 16px;
+        line-height: 1.7;
+        max-width: 95%;
+    }
+    
+    .about-h{
+        font-size: 38px;
+        line-height: 1.4;
+        margin-top: 45px;
+        max-width: 95%;
+    }
+
+    #resume{
+        margin-top: 5rem;
+    }
+
+    .resume-ct{
+        padding-left: 2rem;
+    }
+
+    .resume-ct1{
+        padding-left: 2rem;
+    }
+    
+    .resume-h {
+        font-size: 23px;
+        line-height: 35px;
+        margin-top: 0px;
+        margin-bottom: 6px;
+        max-width: 96%;
+    }
+    
+    .resume-d{
+        color: #999999;
+        margin-top: 0;
+        font-size: 13px;
+    }
+
+    #services{
+        margin-top: 6rem;
+    }
+    
+    .services-ct{
+        padding: 1rem;
+        border: 1px solid #999999;
+        max-width: 80%;
+    }
+
+    .services-h{
+        line-height: 5px;
+        font-size: 20px;
+    }
+    
+    .services-d{
+        font-size: 13px;
+    }
+    
+    .services-d1{
+        font-size: 13px;
+    }
+    
+    .services-ct img{
+        width: 20px;
+        height: 20px;
+        margin-top: -99px;
+    }
+
+    #skills{
+        margin-top: 6rem;
+    }
+    
+    .skills-ctn{
+        flex-wrap: wrap;
+        left: -10px;
+    }
+    
+    .skills-ctn1{
+        flex-wrap: wrap;
+        margin-top: 0px;
+        left: -10px;
+    }
+    
+    .skills-data{
+        padding: 35px;
+        margin-bottom: 10px;
+    }
+    
+    .skills-data p{
+        color: white;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    #portfolio{
+        margin-top: 6rem;
+    }
+    
+    .port-ctn{
+        width: 85%;
+        height: auto;
+        border-radius: 30px;
+        display: flex;
+    }
+
+    .port-ctn1{
+        width: 85%;
+        height: auto;
+        border-radius: 30px;
+        display: flex;
+        padding-left: 2rem;
+    }
+
+    .port-ctn2{
+        width: 85%;
+        height: auto;
+        border-radius: 30px;
+        display: flex;
+        padding-left: 2rem;
+    }
+    
+    .port-ctn p{
+        color: #000;
+        margin-top: 340px;
+        height: 1.5rem;
+        flex-direction: column;
+        margin-right: 1rem;
+        background-color: white;
+        text-align: center;
+        border-radius: 100px;
+        padding: 7px;
+    }
+    
+    .p-h{
+        color: white;
+        font-weight: 300;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    #contact{
+        margin-top: 6rem;
+        max-width: 90%;
+    }
+    
+    #contact h2{
+        margin-top: -05px;
+        font-size: 20px;
+    }
+    
+    .f1{
+        display: block;
+        margin-top: 30px;
+        width: auto;
+    }
+    
+    .f1 input{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    label{
+        color: white;
+        font-size: small;
+    }
+    
+    #name,#email{
+        width: 23rem;
+        outline: 0;
+        color: white;
+        background-color: transparent;
+        padding: 10px;
+        border: none;
+        font-size: 25px;
+    }
+    
+    textarea{
+        width: 46.3rem;
+        outline: 0;
+        color: white;
+        background-color: transparent;
+        padding: 10px;
+        border: none;
+        resize: none;
+    }
+    
+    textarea::placeholder{
+        font-size: medium;
+        font-family: 'Poppins', sans-serif;
+        color: #999999;
+    }
+    
+    .m1{
+        margin-top: 30px;
+    }
+    
+    ::placeholder{
+        font-size: medium;
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        color: #999999;
+    }
+    
+    .f-btn{
+        width: 15rem;
+        background-color: #66fcf1;
+        position: relative;
+        margin:auto;
+        height: 3.5rem;
+        border-radius: 30px;
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 361px) and (max-width: 430px) {
+
+    html{
+        overflow-x: hidden;
+    }
+    
+    body {
+        max-width: 427px;
+        overflow-x: hidden;
+    }
+
+    .sidebar{
+        width: 95%;
+        position: relative;
+        top: 20px;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        left: 2.5%;
+    }
+
+    .sidebar h2{
+        line-height: 1.5;
+    }
+
+    copyright{
+        font-size: 13px;
+    }
+
+    .extra{
+        width: 99%;
+        height: auto;
+        top: 2rem;
+        left: 0;
+    }
+
+    .s-h{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .s-h p{
+        justify-content: flex-end; 
     }
 
     .s-ul{
@@ -989,7 +1334,7 @@ textarea::placeholder{
         margin-top: 6rem;
     }
     
-    .contact h2{
+    #contact h2{
         margin-top: -05px;
         font-size: 20px;
     }
@@ -1052,6 +1397,291 @@ textarea::placeholder{
         background-color: #66fcf1;
         position: relative;
         margin:auto;
+        height: 3.5rem;
+        border-radius: 30px;
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 431px) and (max-width: 1024px) {
+
+    html{
+        overflow-x: hidden;
+    }
+    
+    body {
+        max-width: 1023px;
+        overflow-x: hidden;
+    }
+
+    .sidebar{
+        width: 95%;
+        position: relative;
+        top: 20px;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        left: 2.5%;
+    }
+
+    .sidebar h2{
+        line-height: 1.5;
+    }
+
+    copyright{
+        font-size: 13px;
+    }
+
+    .extra{
+        width: 95%;
+        height: auto;
+        top: 2rem;
+        left: 0;
+    }
+
+    .s-h{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .s-h p{
+        justify-content: flex-end; 
+    }
+
+    .s-ul{
+        margin-top: 3.5%;
+    }
+
+    .s-li{
+        padding: 10px;
+    }
+
+    .s-btn{
+        margin-top: 3.5%;
+        color: #000;
+        margin-bottom: 0.5rem;
+        width: 85%;
+    }
+
+    .s_nav{
+        visibility: visible;
+    }
+
+    #side_nav{
+        visibility: visible;
+    }
+
+    .nav{
+        visibility: hidden;
+        
+    }
+
+    .intro-h{
+        font-size: 58px;
+        line-height: 1.3;
+        
+    }
+
+    .intro-d{
+        font-size: 16px;
+    }
+
+    .intro-m1{
+        color: #999999;
+        float: left;
+        margin-top: -5.5%;
+    }
+
+    #about{
+        margin-top: 31rem;
+    }
+
+    .about-d{
+        font-size: 16px;
+        line-height: 1.7;
+        max-width: 95%;
+    }
+    
+    .about-h{
+        font-size: 48px;
+        line-height: 60px;
+        margin-top: 45px;
+    }
+
+    #resume{
+        margin-top: 5rem;
+    }
+    
+    .resume-h {
+        font-size: 23px;
+        line-height: 35px;
+        margin-top: 0px;
+        margin-bottom: 6px;
+    }
+    
+    .resume-d{
+        color: #999999;
+        margin-top: 0;
+        font-size: 13px;
+    }
+
+    #services{
+        margin-top: 6rem;
+    }
+    
+    .services-ct{
+        padding: 1.3rem;
+        border: 1px solid #999999;
+        max-width: 100%;
+    }
+
+    .services-h{
+        line-height: 5px;
+        font-size: 20px;
+    }
+    
+    .services-d{
+        font-size: 16px;
+    }
+    
+    .services-d1{
+        font-size: 13px;
+    }
+    
+    .services-ct img{
+        width: 20px;
+        height: 20px;
+        margin-top: -99px;
+    }
+
+    #skills{
+        margin-top: 6rem;
+    }
+    
+    .skills-ctn{
+        flex-wrap: wrap;
+        left: -10px;
+    }
+    
+    .skills-ctn1{
+        flex-wrap: wrap;
+        margin-top: 0px;
+        left: -10px;
+    }
+    
+    .skills-data{
+        padding: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .skills-data p{
+        color: white;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #portfolio{
+        margin-top: 6rem;
+    }
+    
+    .port-ctn{
+        width: 95%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .port-ctn1{
+        margin-top: 50px;
+        width: 95%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .port-ctn2{
+        margin-top: 50px;
+        width: 95%;
+        height: auto;
+        border-radius: 25px;
+    }
+    
+    .port-ctn p{
+        color: #000;
+        margin-top: 340px;
+        height: 1.5rem;
+        flex-direction: column;
+        margin-right: 1rem;
+        background-color: white;
+        text-align: center;
+        border-radius: 100px;
+        padding: 7px;
+    }
+    
+    .p-h{
+        color: white;
+        font-weight: 300;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    #contact{
+        margin-top: 6rem;
+    }
+    
+    #contact h2{
+        margin-top: -05px;
+        font-size: 20px;
+    }
+
+    textarea{
+        width: 46.3rem;
+        outline: 0;
+        color: white;
+        background-color: transparent;
+        padding: 10px;
+        border: none;
+        resize: none;
+    }
+    
+    textarea::placeholder{
+        font-size: medium;
+        font-family: 'Poppins', sans-serif;
+        color: #999999;
+    }
+
+    .m1{
+        margin-top: 30px;
+    }
+    
+    .f-btn{
+        width: 15rem;
+        background-color: #66fcf1;
+        position: relative;
+        margin: auto;
         height: 3.5rem;
         border-radius: 30px;
         font-size: 1rem;
