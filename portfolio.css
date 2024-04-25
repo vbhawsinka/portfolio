@@ -11,6 +11,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+::selection{
+    background-color: #66fcf1;
+    color: black;
+}
+
 .sidebar{
     background-color: black;
     width: 21.3rem;
@@ -77,6 +82,12 @@ copyright{
 }
 
 
+.cv{
+    text-decoration: none;
+    padding-left: 10%;
+    margin-bottom: 2%;
+}
+
 .s-btn{
     width: 17rem;
     background-color: #66fcf1;
@@ -141,7 +152,7 @@ copyright{
 }
 
 /*.s-li svg:hover{
-    fill: aqua;
+    fill: #66fcf1;
     align-items: center;
     margin-top: 0px;
     margin-left: 0px;
@@ -149,7 +160,7 @@ copyright{
 }*/
 
 .active svg{
-    stroke: aqua;
+    stroke: #66fcf1;
 }
 
 
@@ -192,11 +203,11 @@ copyright{
 }
 
 #side_nav ul li a:hover{
-    color: aqua;
+    color: #66fcf1;
 }
 
 #side_nav ul li .active{
-    color: aqua;
+    color: #66fcf1;
 }
 
 .s_nav{
@@ -224,7 +235,7 @@ copyright{
 }
 
 #side_social svg:hover{
-    fill: aqua;
+    fill: #66fcf1;
 }
 
 .nav{
@@ -459,9 +470,9 @@ svg:hover{
     transition: 0.3s ease;
 }
 
-.services-ct:hover .services-d1{
+/*.services-ct:hover .services-d1{
     text-decoration: underline;
-}
+}*/
 
 .services-h{
     color: white;
@@ -496,13 +507,11 @@ svg:hover{
 }
 
 .skills-ctn{
-    
     position: relative;
     display: flex;
 }
 
 .skills-ctn1{
-    
     position: relative;
     display: flex;
     margin-top: 20px;
@@ -552,6 +561,8 @@ svg:hover{
     width: 48rem;
     height: 25rem;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     border-radius: 30px;
     display: flex;
@@ -592,11 +603,13 @@ a{
 }
 
 .port-ctn1{
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/Jameson\ Connects.png);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/Weather.png);
     width: 48rem;
     height: 25rem;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     border-radius: 30px;
     display: flex;
     padding-left: 2rem;
@@ -621,14 +634,20 @@ a{
 }
 
 .port-ctn2{
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/Azadi.png);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/Jameson\ Connects.png);
     width: 48rem;
     height: 25rem;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     border-radius: 30px;
     display: flex;
     padding-left: 2rem;
+}
+
+.ct3{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/Azadi.png) !important;
 }
 
 .port-ctn2:hover p{
@@ -966,7 +985,7 @@ textarea::placeholder{
         height: auto;
         border-radius: 30px;
         display: flex;
-        padding-left: 2rem;
+        
     }
 
     .port-ctn2{
@@ -974,7 +993,7 @@ textarea::placeholder{
         height: auto;
         border-radius: 30px;
         display: flex;
-        padding-left: 2rem;
+        
     }
     
     .port-ctn p{
@@ -1681,7 +1700,7 @@ textarea::placeholder{
         width: 15rem;
         background-color: #66fcf1;
         position: relative;
-        margin: auto;
+        margin:auto;
         height: 3.5rem;
         border-radius: 30px;
         font-size: 1rem;
